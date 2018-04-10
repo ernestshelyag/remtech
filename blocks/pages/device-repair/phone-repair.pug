@@ -1,0 +1,73 @@
+mixin phone-repair()
+    +b.MAIN.device-repair.tablet-repair
+        +hero()
+        +b.SECTION.box-content
+            +e.DIV.title.title
+                span Ремонт телефона
+            +e.DIV.wrp
+                +e.DIV.info-block
+                    +e.DIV.top-block
+                        +e.DIV.img-block
+                            +e.IMG.img(src="img/phone.png")
+                        +e.DIV.text-block
+                            +e.P.text
+                                | Современные сотовые телефоны отличаются большим количеством разнообразных схем, плат и деталей. Это технически сложное устройство, которое может легко прийти в негодность при неправильной эксплуатации.
+                                br
+                                br
+                                | В работе сотового телефона могут возникать неисправности, при которых устройство необходимо отдать в сервисный центр ремонта техники:
+                    +e.UL.list
+                        +e.LI.item попадание влаги и инородных предметов под корпус телефона;
+                        +e.LI.item механические повреждения различного происхождения: сколы, трещины, царапины;
+                        +e.LI.item некорректная работа программного обеспечения телефона;
+                        +e.LI.item некорректное отображение изображения дисплеем;
+                        +e.LI.item перегрев аккумулятора;
+                        +e.LI.item некорректная работа различных устройств ввода: кнопок, тачпада;
+                        +e.LI.item телефон не заряжается;
+                        +e.LI.item самостоятельное выключение либо перезагрузка сотового телефона;
+                        +e.LI.item телефон не видит соединение с компьютером;
+                        +e.LI.item некорректная работа динамиков;
+                        +e.LI.item неправильная работа микрофона.
+                    +e.DIV.bottom-block
+                        +e.P.bottom-text После точного установления причины неисправности мы предложим Вам один из видов ремонта планшета:
+        +blue-eq()
+        +b.SECTION.brands-block
+            +e.DIV.title.title
+                span Мы ремонтируем
+            +e.DIV.container
+                +e.A.item(href="note-repair.html")
+                    +e.SPAN.lil-sq
+                    +e.IMG.img(src="img/lenovo.png")
+                +e.A.item(href="tablet-repair.html")
+                    +e.SPAN.lil-sq
+                    +e.IMG.img(src="img/sony.png")
+                +e.A.item(href="#")
+                    +e.SPAN.lil-sq
+                    +e.IMG.img(src="img/asus.png")
+                +e.A.item(href="acer.html")
+                    +e.SPAN.lil-sq
+                    +e.IMG.img(src="img/acer.png")
+        +b.DIV.paralax-angle(style="background-image: url(img/fix-bg-2.jpg);")
+            +e.SPAN.eq-bottom(style="background-image: url(img/eq-white.png);")
+        +b.SECTION.about
+            +e.DIV.container
+                +e.DIV.item.about__item_left
+                    +e.P.text.about__text_border Если Вы заметили неполадки в работе Вашего сотового телефона, то наш сервисный центр готов предоставить свои услуги ремонта. Наши высококвалифицированные специалисты занимаются ремонтом различной сложности и имеют большой опыт в ремонте телефонов различных фирм: Asus, Lenovo, Sony, Asus.
+                    +e.DIV.img-block.about__img-block_1#it1
+                        +e.IMG.img(src="img/fix.png")
+                +e.DIV.item.about__item_right
+                    +e.P.text.about__text_border
+                        | Наш сервис
+                        a(href="#") «РемТех»
+                        | использует только оригинальные фирменные комплектующие детали и запчасти. Все специалисты, которые работают у нас, обладают большим опытом и высокой квалификации. Также мы предоставляем Вам гарантию на произведенный ремонт телефонов.
+                    +e.DIV.img-block.about__img-block_2#it2
+                        +e.IMG.img(src="img/sup.png")
+                +e.DIV.item.about__item_left
+                    +e.P.text.about__text_bottom При диагностике мы используем специальное сервисное оборудование, которое помогает определить причины некорректной работы телефона. Исходя из результатов диагностики мы устанавливаем объем необходимого ремонта.
+                    +e.DIV.img-block.about__img-block_3#it3
+                        +e.IMG.img(src="img/fix-2.png")
+                +e.DIV.item.about__item_right
+                    +e.P.text.about__text_bottom Для того, чтобы точно определить причины поломки, узнать срок ремонтных работ, а также определить все нужные для проведения ремонта телефона инструменты и запчасти, нужна детальная предварительная диагностика.
+                    +e.DIV.img-block.about__img-block_4#it4
+                        +e.IMG.img(src="img/phone-ok.png")
+            +b.DIV.footer-eq
+                +e.SPAN.eq-img(style="background-image: url(img/eq-light1.png);")

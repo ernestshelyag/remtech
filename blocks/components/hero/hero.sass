@@ -1,0 +1,151 @@
+.hero
+  &__wrp
+    max-width: 1240px
+    min-width: 320px
+    width: 100%
+    margin: 0 auto
+    padding: 0 50px
+    +r(1280)
+      padding: 0 30px
+    +r(990)
+      padding: 0
+    z-index: 2
+    position: relative
+    &_no-slider
+      +wrp
+  &__logo-wrp
+    //+wrp
+  &__container
+    display: flex
+    justify-content: space-between
+    +r(990)
+      flex-direction: column
+  &__slider-block
+    width: 66%
+    min-height: 300px
+    +r(990)
+      width: 100%
+  &__slide
+    text-align: center
+    position: relative
+    +bg-norm
+    height: 380px!important
+    +r(767)
+      height: 300px!important
+    &:before
+      content: ""
+      +zero
+      background: rgba(#000,.2)
+  &__slide-text
+    font-size: 32px
+    font-weight: bold
+    line-height: 0.97
+    color: #fff
+    +vcenter
+    +r(750)
+      font-size: 25px
+      line-height: 1.2
+    +r(500)
+      font-size: 20px
+  &__callback-block
+    width: 34%
+    +r(990)
+      width: 300px
+      margin: 20px auto
+      height: 300px
+    .callback__callback-title
+      +rmin(990)
+        font-size: 18px
+  &__eq
+    display: block
+    height: 86px
+    margin-top: 71px
+    background-position: 50% 50%
+    +r(990)
+      margin-top: 10px
+
+  //-----slick-----
+
+  .slick-dots
+    bottom: 50px
+    li > button
+      &:before
+        content: ""
+        border: solid 1px #fff
+    +r(767)
+      display: none !important
+  .slick-dotted.slick-slider
+    margin-bottom: 0
+  .slick-arrow
+    z-index: 200
+    width: 50px
+    height: 50px
+    +r(767)
+      display: none !important
+  .slick-next
+    right: 50px
+    &:before
+      content: ""
+      width: 50px
+      height: 50px
+      display: block
+      border-top: solid 2px #fff
+      border-right: solid 2px #fff
+      transform: rotate(45deg)
+  .slick-prev
+    left: 50px
+    &:before
+      content: ""
+      width: 50px
+      height: 50px
+      display: block
+      border-top: solid 2px #fff
+      border-right: solid 2px #fff
+      transform: rotate(-135deg)
+
+//-----
+
+.callback-no-slider
+  height: 156px
+  +r(690)
+    display: none
+  &__block
+    +shadow
+    background: #fff
+    float: right
+    width: 650px
+    height: 100%
+    padding: 0 30px
+  &__form
+    display: flex
+    align-items: center
+    justify-content: space-between
+    height: 100%
+  &__phone-block
+    text-align: center
+  &__callback-title
+    color: $main-color
+    font-size: 14px
+    font-weight: 600
+  &__input
+    margin-top: 20px
+    font-size: 30px
+    width: 263px
+    font-family: 'Share Tech Mono', monospace
+.callback-hidden
+    display: none
+    margin: 0 auto
+    width: 300px
+    height: 300px
+    +r(690)
+      display: block
+
+
+
+
+
+
+
+
+
+

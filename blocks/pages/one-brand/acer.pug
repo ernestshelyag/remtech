@@ -1,0 +1,46 @@
+mixin acer()
+    +b.MAIN.one-brand
+        +hero()
+        +b.SECTION.box-content
+            +e.DIV.title.title
+                span Acer
+            +e.DIV.wrp
+                +e.DIV.info-block
+                    +e.DIV.top-block
+                        +e.DIV.img-block
+                            +e.IMG.img(src="img/acer.png")
+                        +e.DIV.text-block
+                            +e.P.text Acer — крупная тайваньская компания, которая занимается разработкой и производством различной электронной техники, как комплектующих, так и готовых устройств. В числе продукции, которую производит Acer:
+                    +e.UL.list
+                        +e.LI.item потребительские десктопы — настольные, стационарные компьютеры, которые предназначены для работы в офисе и дома;
+                        +e.LI.item бизнес-десктопы — компьютеры, которые ориентированы на бизнес-сегмент рынка;
+                        +e.LI.item потребительские ноутбуки — переносной персональный компьютер;
+                        +e.LI.item бизнес-ноутбуки — ноутбук, ориентированный на бизнес-сегмент;
+                        +e.LI.item планшетные компьютеры — компактные компьютеры, в которых навигация и управление осуществляется при помощи сенсорного экрана;
+                        +e.LI.item нетбуки — компактный мобильный ноутбук с малой производительностью, его основное предназначение заключается в выходе в сеть Интернет;
+                        +e.LI.item неттопы — стационарный персональный компьютер, который отличается малыми размерами;
+                        +e.LI.item серверы и различные устройства, предназначенные для хранения данных;
+                        +e.LI.item компьютерные дисплеи;
+                        +e.LI.item проекторы;
+                        +e.LI.item смартфоны;
+                        +e.LI.item телевизоры;
+                        +e.LI.item домашние медиасистемы;
+                        +e.LI.item цифровые камеры;
+                        +e.LI.item автомобильные навигационные устройства.
+        +b.DIV.paralax-angle(style="background-image: url(img/main-bg.jpg);")
+            +e.SPAN.eq-bottom(style="background-image: url(img/eq-white.png);")
+        +b.SECTION.gajets-block
+            +e.DIV.title.title.gajets-block__title_one-brand
+                span Мы ремонтируем
+            +e.DIV.container
+                +e.A.item(href="#")
+                    +e.IMG.img(src="img/phone.png")
+                    +e.SPAN.text Смартфоны
+                +e.A.item(href="#")
+                    +e.IMG.img(src="img/note.png")
+                    +e.SPAN.text Ноутбуки
+                +e.A.item(href="repair.html")
+                    +e.IMG.img(src="img/tablet.png")
+                    +e.SPAN.text Планшеты
+            +b.DIV.footer-eq
+                +e.SPAN.eq-img(style="background-image: url(img/eq-light1.png);")

@@ -1,0 +1,16 @@
+mixin hero-no-slider()
+    +b.DIV.hero.hero-no-slider
+      +e.DIV.wrp.hero__wrp_no-slider
+        +logo-block()
+        +b.DIV.callback-hidden
+          +callback()
+        +b.DIV.callback-no-slider
+          +e.DIV.block
+            +e.FORM.form
+              +e.DIV.phone-block
+                +e.SPAN.callback-title Напишите  номер телефона и мы Вам перезвоним
+                +e.DIV.form-input
+                  +e.INPUT.input(type="text" name="phone" placeholder="+7(___)___-__-__")
+              +e.DIV.form-submit
+                +e.BUTTON.button.main-btn Заказать звонок
+        +e.SPAN.eq(style="background-image: url(img/eq-gray.png);")

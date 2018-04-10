@@ -1,0 +1,67 @@
+.footer
+  display: none
+  &.active
+    display: block
+  //-----
+  .header
+    background: #F0F9FC
+    &__phone-link
+      color: $main-color-darker
+      &:before
+        background: url("../img/phone-icon-black.png")
+    &__link
+      border: solid 2px $main-color-darker
+      &:hover
+        background: $main-color
+        border: solid 2px #fff
+        & > i
+          color: #fff
+    &__icon
+      color: $main-color-darker
+  .logo-block
+    padding-bottom: 30px
+    border-bottom: solid 1px $main-color
+    &__link
+      color: #fff
+  //-----
+
+  height: 357px
+  text-align: center
+  position: fixed
+  bottom: 0
+  z-index: 19
+  left: 0
+  right: 0
+  background: #122836
+  &__wrp
+    +wrp
+  &__bottom
+    display: flex
+    justify-content: space-between
+    margin-top: 30px
+    +r(650)
+      flex-direction: column-reverse
+      margin-top: 10px
+  &__bottom-item
+    color: #fff
+    +r(650)
+      padding: 7px 0
+  &__bottom-item_logo
+    position: relative
+    padding-right: 40px
+    +r(650)
+      padding-right: 0
+    &:before
+      content: ""
+      position: absolute
+      top: 0
+      bottom: 0
+      right: 0
+      margin: auto
+      width: 27px
+      height: 30px
+      background-image: url("../img/logo-indis.png")
+      background-size: contain
+      background-repeat: no-repeat
+      +r(650)
+        display: none

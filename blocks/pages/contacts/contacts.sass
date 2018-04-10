@@ -1,0 +1,60 @@
+.contacts .hero__eq
+  +r(990)
+    display: none
+.contacts-block
+  text-align: center
+  +darker-gr
+  padding-bottom: 90px
+  +r(990)
+    background: transparent
+  +r(900)
+    padding-bottom: 0
+  &__container
+    display: flex
+    height: 566px
+    max-width: 1240px
+    min-width: 320px
+    width: 100%
+    margin: 0 auto
+    padding: 0 50px
+    +r(1280)
+      padding: 0 30px
+    +r(990)
+      padding: 0
+    +r(900)
+      flex-direction: column
+      height: auto
+  &__map
+    width: 66%
+    height: 100%
+    min-height: 390px
+    +r(900)
+      width: 100%
+    +r(580)
+      height: 300px
+.text-block
+  +shadow
+  width: 34%
+  min-width: 380px
+  height: 100%
+  background: #fff
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  padding: 60px 0
+  +r(900)
+    width: 90%
+    margin: 20px auto
+    min-width: 300px
+  &__title
+    display: block
+    color: $main-color
+    font-weight: bold
+    padding: 20px 0
+    +r(900)
+      padding: 10px 0
+  &__text
+    line-height: 1.7
+    +r(580)
+      font-size: 14px
+      line-height: 1.2

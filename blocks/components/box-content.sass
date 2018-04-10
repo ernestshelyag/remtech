@@ -1,0 +1,112 @@
+.box-content
+  +darker-gr
+  text-align: center
+  +r(1280)
+    background: transparent
+  &__wrp
+    max-width: 1240px
+    min-width: 320px
+    width: 100%
+    margin: 0 auto
+    padding: 0 50px
+    text-align: left
+    padding-bottom: 90px
+    +r(1280)
+      padding: 0
+  &__title
+    +r(990)
+      margin: 20px 0 50px
+  &__info-block
+    +shadow
+    background: #fff
+    padding: 90px
+    +r(1024)
+      padding: 40px
+  &__top-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    +r(767)
+      flex-direction: column-reverse
+  &__img-block
+    text-align: center
+    padding-right: 30px
+    +r(767)
+      padding-right: 0
+  &__img
+    padding: 20px 0
+    display: block
+    margin: auto
+  &__text
+    padding-left: 55px
+    border-left: solid 2px #C3E7F2
+    +r(767)
+      padding-left: 0
+      border: none
+      text-align: center
+      font-size: 14px
+  &__list
+    margin-top: 20px
+  &__item
+    padding-left: 75px
+    position: relative
+    margin-bottom: 20px
+    line-height: 1
+    font-size: 14px
+    font-weight: bold
+    +r(1024)
+      padding-left: 45px
+    +r(500)
+      font-size: 12px
+      font-weight: normal
+    &:before
+      position: absolute
+      left: 0
+      bottom: 0
+      top: 0
+      margin: auto
+      content: ""
+      background-image: url("../img/arrow.png")
+      +bg-norm
+      width: 18px
+      height: 13px
+  &__bottom-text
+    padding-top: 20px
+    +r(767)
+      font-size: 14px
+    +r(500)
+      font-size: 12px
+      line-height: 1.2
+  &__num-block
+    display: flex
+    justify-content: space-around
+    align-items: baseline
+    font-weight: bold
+    margin-top: 40px
+    line-height: 1.2
+    +r(840)
+      flex-direction: column
+
+  &__num-item
+    width: 171px
+    text-align: center
+    & > span
+      display: block
+    +r(840)
+      width: 100%
+      padding-bottom: 30px
+  &__num
+    color: $main-color
+    border: solid 1px $main-color
+    width: 50px
+    height: 50px
+    line-height: 50px
+    font-size: 20px
+    margin: auto
+    +shadow
+    border-radius: 50%
+  &__num-title
+    color: $main-color
+    padding: 30px 0
+
+

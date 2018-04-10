@@ -1,0 +1,33 @@
+mixin main()
+  +b.MAIN.main
+    +hero()
+    +brands-block()
+    +blue-eq()
+    +gajets-block()
+    +b.DIV.paralax-angle(style="background-image: url(img/main-bg.jpg);")
+      +e.SPAN.eq-bottom(style="background-image: url(img/eq-white.png);")
+    +b.SECTION.about
+      +e.DIV.title.title
+        span О компании
+      +e.DIV.container
+        +e.DIV.item.about__item_left
+          +e.P.text.about__text_border
+            | Сервисный центр
+            a(href="#") «РемТех»
+            | занимается диагностикой, ремонтом и заменой деталей телефонов, планшетов и ноутбуков. Мы работаем с техникой таких производителей, как Asus, Sony, Lenovo, MSI, Dell, Acer
+          +e.DIV.img-block.about__img-block_1#it1
+            +e.IMG.img(src="img/fix.png")
+        +e.DIV.item.about__item_right
+          +e.P.text.about__text_border В нашем сервисном центре работает команда специалистов, каждый из которых обладает большим опытом работы в сфере ремонта электронной техники. Также все они отличаются высокой квалификацией и необходимыми знаниями.
+          +e.DIV.img-block.about__img-block_2#it2
+            +e.IMG.img(src="img/sup.png")
+        +e.DIV.item.about__item_left
+          +e.P.text.about__text_bottom При проведении диагностики и ремонта мы используем специальные профессиональные инструменты, а при замене деталей используем только фирменные оригинальные запчасти от производителя.
+          +e.DIV.img-block.about__img-block_3#it3
+            +e.IMG.img(src="img/fix-2.png")
+        +e.DIV.item.about__item_right
+          +e.P.text.about__text_bottom Все это вместе позволяет нам быть полностью уверенными в качестве своей работы, поэтому мы предоставляем Вам гарантию на произведенный ремонт.
+          +e.DIV.img-block.about__img-block_4#it4
+            +e.IMG.img(src="img/phone-ok.png")
+      +b.DIV.footer-eq
+        +e.SPAN.eq-img(style="background-image: url(img/eq-light1.png);")

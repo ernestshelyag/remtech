@@ -1,0 +1,53 @@
+.header
+  position: relative
+  background: #002835
+  z-index: 21
+  &__wrp
+    +wrp
+    height: 50px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__item
+    display: inline
+    margin-right: 20px
+    +r(500)
+      transform: scale(.5)
+      margin-right: 3px
+  &__link
+    border: solid 2px #0098C8
+    border-radius: 50%
+    width: 29px
+    height: 29px
+    text-align: center
+    position: relative
+    &:hover
+      background: #fff
+      +shadow
+  &__icon
+    color: #0098C8
+    +vcenter
+  &__phone-link
+    color: #fff
+    position: relative
+    &:before
+      content: ""
+      position: absolute
+      width: 26px
+      height: 26px
+      background: url("../img/phone-icon.png")
+      top: 0
+      bottom: 0
+      left: -40px
+      margin: auto
+    +r(500)
+      font-size: 13px
+      font-weight: bold
+      &:before
+        display: none
+
+
+
+
+
+

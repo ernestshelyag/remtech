@@ -1,0 +1,65 @@
+.brands-block
+  +darker-gr
+  text-align: center
+  &__container
+    +wrp
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    +r(767)
+      flex-direction: column
+      align-items: center
+  &__item
+    margin: 50px 40px
+    width: 229px
+    height: 229px
+    position: relative
+    +r(1024)
+      margin: 40px 40px
+    +r(767)
+      height: 100px
+    &:before, &:after
+      content: ""
+      position: absolute
+      bottom: 0
+      right: 0
+      background: #fff
+      z-index: -1
+      transition: all .3s
+    &:before
+      left: 37px
+      top: 0
+    &:after
+      left: 0
+      right: 0
+      top: 37px
+    &:hover
+      +shadow
+      background: #fff
+      & > span
+        opacity: 0
+        top: -30px
+        left: -30px
+        transform: rotate(90deg)
+    &:hover::before
+      left: 0
+    &:hover::after
+      top: 0
+  &__lil-sq
+    width: 35px
+    height: 35px
+    background: #fff
+    position: absolute
+    top: -10px
+    left: -10px
+    transition: all .3s
+    +shadow
+  &__img
+    +vcenter
+    max-height: 84px
+    //max-width: 84px
+    //height: auto
+  &__all
+    margin-bottom: 102px
+    +r(767)
+      margin-bottom: 50px

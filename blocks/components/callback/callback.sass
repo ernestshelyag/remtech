@@ -1,0 +1,40 @@
+.callback
+  +shadow
+  background: #fff
+  text-align: center
+  width: 100%
+  height: 100%
+  padding: 40px 0
+  &__form
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 100%
+  &__callback-title
+    color: $main-color
+    font-size: 16px
+    font-weight: 600
+    line-height: 1.56
+  &__input
+    font-size: 30px
+    width: 263px
+    font-family: 'Share Tech Mono', monospace
+    transition: all, .3s
+.error
+  box-shadow: 0 0 37px rgba(red,.7)
+  border-radius: 5px
+  padding: 5px 0
+.hidden
+  color: $main-color
+  background: #fff
+  text-align: center
+  height: 200px
+  width: 300px
+  font-size: 20px
+  padding-top: 40px
+  +shadow
+  border-radius: 5px
+  line-height: 2
+  +vcenter
+  //visibility: hidden
+

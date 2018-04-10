@@ -1,0 +1,61 @@
+$browser-context: 16 // Default
+
+@function em($pixels, $context: $browser-context)
+  @return #{$pixels/$context}em
+
+*, *:before, *:after
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+
+*::selection
+  background: rgba($main-color,.93)
+  color: #fff
+
+html
+  -webkit-text-size-adjust: none
+  text-size-adjust: none
+
+body
+  font-family: 'Open Sans', sans-serif
+  font-weight: 400
+  color: $main-color-darker
+  font-size: 16px
+  //overflow-x: hidden
+  padding-bottom: 357px
+  z-index: 200
+  position: relative
+
+main
+  position: relative
+  z-index: 20
+
+section
+  position: relative
+  z-index: 1
+
+a
+  display: inline-block
+  outline: none
+  transition: all .3s ease-in
+  color: $main-color-darker
+
+p
+  font-size: 1em
+  line-height: 1.6
+  margin: 1em 0
+
+button
+  border: 0
+  outline: 0
+  background-color: transparent
+  cursor: pointer
+
+input[type="text"],
+input[type="submit"],
+input[type="button"],
+select,
+textarea
+  appearance: none
+  outline: 0
+  //font-family: 'Open Sans', sans-serif
+  border: none

@@ -1,0 +1,24 @@
+mixin contacts()
+  +b.MAIN.contacts
+    +hero-no-slider()
+    +b.SECTION.contacts-block
+      +e.DIV.title.title
+        span Контакты
+      +e.DIV.container
+        +e.DIV.map#map
+        +b.DIV.text-block
+          +e.DIV.item
+            +e.SPAN.title Наш адрес
+            +e.SPAN.text Санкт-Петербург, ул. Садовая, д.3
+          +e.DIV.item
+            +e.SPAN.title Время работы
+            +e.SPAN.text
+              | Понедельник — Пятница: 10:00 — 19:00
+              br
+              | Суббота — Воскресенье:  Выходной
+              br
+              | Без перерыва на обед
+          +e.DIV.item
+            +e.SPAN.title Наш телефон
+            +e.A.text(href="tel: +78122345173") +7(812)-23-45-173
+    +callback-block()

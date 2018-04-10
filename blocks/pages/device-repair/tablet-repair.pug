@@ -1,0 +1,80 @@
+mixin tablet-repair()
+    +b.MAIN.device-repair.tablet-repair
+        +hero()
+        +b.SECTION.box-content
+            +e.DIV.title.title
+                span Ремонт планшета
+            +e.DIV.wrp
+                +e.DIV.info-block
+                    +e.DIV.top-block
+                        +e.DIV.img-block
+                            +e.IMG.img(src="img/tablet.png")
+                        +e.DIV.text-block
+                            +e.P.text Планшетный компьютер, или просто планшет — современное электронное устройство с сенсорным экраном. Представляет собой портативную и компактную версию обычного стационарного компьютера. В производстве планшетов используется большое количество разнообразных схем и плат, которые отличаются маленькими размерами. Это очень хрупкое устройство, и оно может прийти в негодность от большого количества факторов. Самые частые поломки, при которых необходим ремонт планшета:
+                    +e.UL.list
+                        +e.LI.item механические повреждения дисплея: царапины, трещины, сколы;
+                        +e.LI.item некорректная работа тачпада;
+                        +e.LI.item программные сбои;
+                        +e.LI.item перегрев аккумулятора;
+                        +e.LI.item сломанные кнопки;
+                        +e.LI.item неработающие динамики;
+                        +e.LI.item некорректная работа микрофона;
+                        +e.LI.item неработающая камера планшета.
+                    +e.DIV.bottom-block
+                        +e.P.bottom-text После точного установления причины неисправности мы предложим Вам один из видов ремонта планшета:
+                    +e.DIV.num-block
+                        +e.DIV.num-item
+                            +e.SPAN.num 1
+                            +e.SPAN.num-title Программный
+                            +e.SPAN.num-text заключается в исправлении программных ошибок, перепрошивке
+                        +e.DIV.num-item
+                            +e.SPAN.num 2
+                            +e.SPAN.num-title Модульный
+                            +e.SPAN.num-text представляет собой ремонт либо замену модуля планшета
+                        +e.DIV.num-item
+                            +e.SPAN.num 3
+                            +e.SPAN.num-title Аппаратный
+                            +e.SPAN.num-text замена корпуса планшета, стекла, кнопок
+                        +e.DIV.num-item
+                            +e.SPAN.num 4
+                            +e.SPAN.num-title Сложный аппаратный
+                            +e.SPAN.num-text замена сложных деталей планшета, таких как материнская плата
+        +blue-eq()
+        +b.SECTION.brands-block
+            +e.DIV.title.title
+                span Мы ремонтируем
+            +e.DIV.container
+                +e.A.item(href="note-repair.html")
+                    +e.SPAN.lil-sq
+                    +e.IMG.img(src="img/lenovo.png")
+                +e.A.item(href="tablet-repair.html")
+                    +e.SPAN.lil-sq
+                    +e.IMG.img(src="img/sony.png")
+                +e.A.item(href="#")
+                    +e.SPAN.lil-sq
+                    +e.IMG.img(src="img/asus.png")
+                +e.A.item(href="acer.html")
+                    +e.SPAN.lil-sq
+                    +e.IMG.img(src="img/acer.png")
+        +b.DIV.paralax-angle(style="background-image: url(img/fix-bg-2.jpg);")
+            +e.SPAN.eq-bottom(style="background-image: url(img/eq-white.png);")
+        +b.SECTION.about
+            +e.DIV.container
+                +e.DIV.item.about__item_left
+                    +e.P.text.about__text_border Специалисты, которые работают в нашем сервисном центре, обладают большим опытом работы ремонта планшетов таких фирм, как Asus, Sony, Lenovo и Acer. Они отлично разбираются во внутреннем устройстве ноутбука и обладают пониманием, как лучше решить ту или иную проблему.
+                    +e.DIV.img-block.about__img-block_1#it1
+                        +e.IMG.img(src="img/tablet-1.png")
+                +e.DIV.item.about__item_right
+                    +e.P.text.about__text_border Вне зависимости от типа повреждения в первую очередь квалифицированные специалисты нашего сервисного центра проводят тщательную диагностику планшета с помощью специального оборудования для того, чтобы определить дальнейших план ремонтных работ.
+                    +e.DIV.img-block.about__img-block_2#it2
+                        +e.IMG.img(src="img/tablet-2.png")
+                +e.DIV.item.about__item_left
+                    +e.P.text.about__text_bottom Иногда ремонт планшета представляет собой замену деталей. В этом случае мы используем только фирменные запчасти от производителя. Это гарантирует качество запчасти, совместимости запчасти с устройством и конечного результата ремонта.
+                    +e.DIV.img-block.about__img-block_3#it3
+                        +e.IMG.img(src="img/tablet-3.png")
+                +e.DIV.item.about__item_right
+                    +e.P.text.about__text_bottom После диагностики проводятся ремонтные работы. Их длительность зависит в основном от типа повреждений. Мы используем только профессиональную технику и у  нас всегда в наличии все необходимые запчасти для замены неисправных деталей.
+                    +e.DIV.img-block.about__img-block_4#it4
+                        +e.IMG.img(src="img/tablet-4.png")
+            +b.DIV.footer-eq
+                +e.SPAN.eq-img(style="background-image: url(img/eq-light1.png);")

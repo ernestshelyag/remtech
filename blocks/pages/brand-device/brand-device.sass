@@ -1,0 +1,44 @@
+.brand-device
+  .hero__eq
+    +r(1280)
+      display: none
+  .title
+    +r(500)
+      overflow: hidden
+.price
+  background: #fff
+  text-align: center
+  padding-bottom: 70px
+.table-price
+  +r(717)
+    font-size: 14px
+    width: 100%
+    overflow-x: auto
+  +r(450)
+    font-size: 12px
+  &__table
+    max-width: 1140px
+    min-width: 320px
+    width: 100%
+    margin: 0 auto
+    text-align: left
+    white-space: nowrap
+    +r(717)
+      width: 100%
+      min-width: 500px
+  &__row
+    border-bottom: solid 2px $main-color
+    td, th
+      &:first-child
+        padding-left: 10px
+      &:last-child
+        text-align: right
+        padding: 0 10px
+  &__cell
+    line-height: 2.3
+  th
+    font-weight: bold
+.tablet-repair
+  .brands-block__container
+    max-width: 870px
+

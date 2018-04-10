@@ -1,0 +1,33 @@
+.gajets-block
+  text-align: center
+  &__container
+    +wrp
+    display: flex
+    justify-content: space-around
+    margin: 15px auto 45px
+    +r(630)
+      flex-direction: column
+      align-items: center
+      margin: 30px auto 20px
+  &__item
+    position: relative
+    width: 251px
+    height: 277px
+    text-align: center
+    &:hover
+      +shadow
+      background: #fff
+  &__img
+    position: absolute
+    left: 50%
+    top: 37%
+    transform: translate(-50%, -50%)
+  &__text
+    display: block
+    margin-top: 204px
+    color: $main-color
+    font-size: 22px
+  &__all
+    margin-bottom: 100px
+    +r(767)
+      margin-bottom: 50px

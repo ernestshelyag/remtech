@@ -1,0 +1,14 @@
+mixin logo-block()
+    +b.DIV.logo-block
+        +e.A.logo(href="/")
+            +e.IMG.logo-img(src="img/logo.png")
+        +e.DIV.menu-block
+            +e.UL.list
+                +e.LI.item
+                    +e.A.link(href="brands.html") Бренды
+                +e.LI.item.logo-block__item_sq
+                +e.LI.item
+                    +e.A.link(href="gadjets.html") Устройства
+                +e.LI.item.logo-block__item_sq
+                +e.LI.item
+                    +e.A.link(href="contacts.html") Контакты

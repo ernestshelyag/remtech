@@ -1,0 +1,104 @@
+.about
+  +lighter-gr
+  text-align: center
+  position: relative
+  &:before
+    +r(530)
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background: rgba(#152C3A,.7)
+      content: ""
+  &__title
+    +r(530)
+      &:before, &:after
+        border: solid 1px #fff
+    & > span
+      font-size: 46px
+      +r(530)
+        color: #fff
+        font-size: 30px
+        &:before, &:after
+          border: solid 1px #fff
+  &__container
+    +wrp
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__item
+    width: 550px
+    height: 300px
+    position: relative
+    margin: auto
+    &_right
+      text-align: right
+      clear: right
+      & > p
+        float: right
+    &_left
+      text-align: left
+  &__text
+    width: 282px
+    +r(530)
+      color: #fff
+      font-weight: bold
+    &_border
+      border-bottom: solid 1px $main-color
+      padding-bottom: 80px
+    &_bottom
+      padding-top: 30px
+      +r(1175)
+        border-bottom: solid 1px $main-color
+        padding-bottom: 60px
+    & > a
+      color: $main-color
+      padding: 0 3px
+  &__img-block
+    width: 193px
+    height: 193px
+    line-height: 193px
+    text-align: center
+    +shadow
+    position: absolute
+    +r(530)
+      z-index: -1
+    &.active
+      &:before
+        transform: scale(1.5)
+    &:before
+      content: ""
+      position: absolute
+      width: 30px
+      height: 30px
+      background: #fff
+      z-index: -1
+      +shadow
+      transition: all .5s
+    &_1
+      bottom: 30px
+      right: 15px
+      &:before
+        top: -15px
+        left: -15px
+    &_2
+      bottom: 30px
+      left: 15px
+      &:before
+        top: -15px
+        right: -15px
+    &_3
+      top: 30px
+      right: 15px
+      &:before
+        bottom: -15px
+        left: -15px
+    &_4
+      top: 30px
+      left: 15px
+      &:before
+        bottom: -15px
+        right: -15px
+  &__img
+    vertical-align: middle

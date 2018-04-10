@@ -1,0 +1,28 @@
+.logo-block
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 31px 0
+  +r(500)
+    flex-direction: column
+  &__logo
+    margin-right: 20px
+  &__menu-block
+    flex-grow: 1
+    +r(500)
+      width: 270px
+  &__list
+    float: right
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    max-width: 478px
+    +r(500)
+      margin: 15px 0
+  &__item
+    display: inline-block
+    &_sq
+      width: 11px
+      height: 11px
+      border: solid 1px $main-color

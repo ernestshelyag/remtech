@@ -1,0 +1,58 @@
+include bemto/bemto
+- set_bemto_settings({ modifier: "--" })
+
+include ../mixins
+
+doctype html
+html(lang="ru")
+
+  head
+    +head()
+    block vendors-css
+
+      // build:css css/vendor.css
+      link(rel="stylesheet" href="libs/slick-carousel/slick/slick.css")
+      link(rel="stylesheet" href="libs/slick-carousel/slick/slick-theme.css")
+      link(rel="stylesheet" href="libs/magnific-popup/dist/magnific-popup.css")
+      link(rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css")
+      // endbuild
+
+    block title
+
+  body
+
+    <!--[if lt IE 8]>
+    p(style="padding: 20px;")
+      | Вы используете старую версию браузера.
+      | Пожалуйста
+      a(href='http://browsehappy.com/', style="padding: 0 5px; font-weight: bold; text-transform: uppercase;") обновите ваш браузер
+      | перейдя по ссылке.
+    <![endif]-->
+
+    block header
+      +header()
+    .particles#particles-js
+    block content
+    block footer
+      +footer()
+    .hidden#success
+      | Спасибо!
+      br
+      | Мы свяжемся с вами
+      br
+      | в ближайшее время.
+    block vendors-js
+
+      // build:js js/vendor.js
+      script( src="libs/jquery/dist/jquery.min.js")
+      script( src="libs/particles.js/particles.min.js")
+      script( src="libs/slick-carousel/slick/slick.min.js")
+      script( src="libs/jquery.inputmask.bundle.js")
+      script( src="libs/magnific-popup/dist/jquery.magnific-popup.min.js")
+      // endbuild
+
+    block main-scripts-link
+
+      // build:js js/main.js
+      script( src="js/main.js")
+      // endbuild

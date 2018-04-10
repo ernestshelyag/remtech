@@ -1,0 +1,68 @@
+mixin note-repair()
+    +b.MAIN.device-repair
+        +hero()
+        +b.SECTION.box-content
+            +e.DIV.title.title
+                span Ремонт ноутбука
+            +e.DIV.wrp
+                +e.DIV.info-block
+                    +e.DIV.top-block
+                        +e.DIV.img-block
+                            +e.IMG.img(src="img/note.png")
+                        +e.DIV.text-block
+                            +e.P.text Ноутбук представляет собой сложное высокотехнологичное устройство. Он состоит из множества маленьких хрупких деталей, которые очень легко повредить. Различные механические повреждения, попадание влаги или инородных тел в ноутбук, сломанные кнопки — при любых поломках ремонт ноутбука должен производиться профессионалом. Этому есть несколько объяснений. Самые частые поломки, при которых обращаются в наш центр для ремонта ноутбука:
+                    +e.UL.list
+                        +e.LI.item ноутбук не включается;
+                        +e.LI.item ноутбук не загружает операционную систему;
+                        +e.LI.item некорректная работа устройств ввода: клавиатуры или тачпада;
+                        +e.LI.item некорректное отображение изображения на экране ноутбука;
+                        +e.LI.item перегрев аккумулятора;
+                        +e.LI.item самопроизвольное выключение или перезагрузка;
+                        +e.LI.item механические повреждения;
+                        +e.LI.item попадание инородных тел под корпус ноутбука;
+                        +e.LI.item царапины и сколы на мониторе ноутбука.
+        +blue-eq()
+        +b.SECTION.brands-block
+            +e.DIV.title.title
+                span Мы ремонтируем
+            +e.DIV.container
+                +e.A.item(href="phone-repair.html")
+                    +e.SPAN.lil-sq
+                    +e.IMG.img(src="img/msi.png")
+                +e.A.item(href="note-repair.html")
+                    +e.SPAN.lil-sq
+                    +e.IMG.img(src="img/lenovo.png")
+                +e.A.item(href="tablet-repair.html")
+                    +e.SPAN.lil-sq
+                    +e.IMG.img(src="img/sony.png")
+                +e.A.item(href="#")
+                    +e.SPAN.lil-sq
+                    +e.IMG.img(src="img/dell.png")
+                +e.A.item(href="#")
+                    +e.SPAN.lil-sq
+                    +e.IMG.img(src="img/asus.png")
+                +e.A.item(href="acer.html")
+                    +e.SPAN.lil-sq
+                    +e.IMG.img(src="img/acer.png")
+        +b.DIV.paralax-angle(style="background-image: url(img/fix-bg-2.jpg);")
+            +e.SPAN.eq-bottom(style="background-image: url(img/eq-white.png);")
+        +b.SECTION.about
+            +e.DIV.container
+                +e.DIV.item.about__item_left
+                    +e.P.text.about__text_border Специалисты, которые работают в нашем сервисном центре, обладают большим опытом работы ремонта ноутбуков самых разных фирм: Asus, Sony, Lenovo, MSI, Dell, Acer. Они очень хорошо знают внутреннее устройство ноутбука и обладают пониманием, как лучше решить ту или иную проблему.
+                    +e.DIV.img-block.about__img-block_1#it1
+                        +e.IMG.img(src="img/note-1.png")
+                +e.DIV.item.about__item_right
+                    +e.P.text.about__text_border Вне зависимости от типа повреждения в первую очередь квалифицированные специалисты нашего сервисного центра проводят тщательную диагностику ноутбука с помощью специального оборудования для того, чтобы определить дальнейших план ремонтных работ.
+                    +e.DIV.img-block.about__img-block_2#it2
+                        +e.IMG.img(src="img/note-2.png")
+                +e.DIV.item.about__item_left
+                    +e.P.text.about__text_bottom Иногда ремонт ноутбука представляет собой замену деталей. В этом случае мы используем только фирменные запчасти от производителя. Это гарантирует качество запчасти, совместимости запчасти с устройством и конечного результата ремонта.
+                    +e.DIV.img-block.about__img-block_3#it3
+                        +e.IMG.img(src="img/note-3.png")
+                +e.DIV.item.about__item_right
+                    +e.P.text.about__text_bottom После диагностики проводятся ремонтные работы. Их длительность зависит в основном от типа повреждений. При ремонте ноутбука мы используем профессиональную технику. У нас всегда в наличии все необходимые запчасти для замены неисправных деталей ноутбука.
+                    +e.DIV.img-block.about__img-block_4#it4
+                        +e.IMG.img(src="img/note-4.png")
+            +b.DIV.footer-eq
+                +e.SPAN.eq-img(style="background-image: url(img/eq-light1.png);")

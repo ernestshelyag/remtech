@@ -1,0 +1,17 @@
+mixin hero()
+    +b.DIV.hero
+        +e.DIV.wrp
+            +e.DIV.logo-wrp
+                +logo-block()
+            +e.DIV.container
+                +e.DIV.slider-block
+                    +e.DIV.slider.hero-slider
+                        +e.DIV.slide(style="background-image: url(img/slide-1.jpg);")
+                            +e.SPAN.slide-text Подменный телефон на время ремонта
+                        +e.DIV.slide(style="background-image: url(img/slide-1.jpg);")
+                            +e.SPAN.slide-text Подменный телефон на время ремонта
+                        +e.DIV.slide(style="background-image: url(img/slide-1.jpg);")
+                            +e.SPAN.slide-text Подменный телефон на время ремонта
+                +e.DIV.callback-block
+                    +callback()
+            +e.SPAN.eq(style="background-image: url(img/eq-gray.png);")

@@ -1,0 +1,42 @@
+.title
+  margin: 50px 0
+  display: inline-block
+  position: relative
+  +r(767)
+    margin: 20px 0
+  &:before, &:after
+    content: ""
+    width: 13px
+    height: 13px
+    position: absolute
+    top: 3px
+    bottom: 0
+    margin: auto
+    border: solid 1px $main-color
+    vertical-align: middle
+  &:before
+    left: -30px
+  &:after
+    right: -30px
+  & > span
+    display: block
+    font-size: 40px
+    color: $main-color
+    position: relative
+    vertical-align: middle
+    +r(767)
+      font-size: 30px
+    &:before, &:after
+      content: ""
+      width: 7px
+      height: 7px
+      display: block
+      position: absolute
+      top: 4px
+      bottom: 0
+      margin: auto
+      border: solid 1px $main-color
+    &:before
+      left: -50px
+    &:after
+      right: -50px

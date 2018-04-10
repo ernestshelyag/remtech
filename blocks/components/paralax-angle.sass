@@ -1,0 +1,43 @@
+.paralax-angle
+  height: 500px
+  overflow: hidden
+  +bg-norm
+  background-attachment: fixed
+  position: relative
+  +r(767)
+    height: 400px
+  &:before
+    z-index: 2
+    content: ""
+    position: absolute
+    bottom: -200px
+    left: -28px
+    right: 0
+    height: 200px
+    background: #efefef
+    transform: rotate(10deg)
+  &:after
+    z-index: 2
+    content: ""
+    position: absolute
+    bottom: -200px
+    left: 0
+    right: -28px
+    height: 200px
+    background: #efefef
+    transform: rotate(-10deg)
+  &:before, &:after
+    +r(530)
+      background: #566670
+  &__eq-bottom
+    max-width: 1200px
+    margin: auto
+    background-repeat: no-repeat
+    background-position: 50% 110%
+    background-size: cover
+    height: 200px
+    position: absolute
+    bottom: -14px
+    left: 0
+    right: 0
+    z-index: 1
